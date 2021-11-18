@@ -1,6 +1,7 @@
 @import "null";
 @import "fonts";
 @import "libs";
+@import "mobile";
 
 body {
     font-family: 'Airbnb Cerea';
@@ -222,10 +223,16 @@ body {
     background-color: #3685FB;
     color: #fff;
     box-shadow: 0px 2.3px 0px 0px rgba(0,0,0,0.04);
+    cursor: pointer;
 
     &-svg {
         font-size: 30px;
     }
+}
+
+.header__select-book:hover {
+    background-color: #fff;
+    color: #3685FB;
 }
 
 .find__travel-content-title {
