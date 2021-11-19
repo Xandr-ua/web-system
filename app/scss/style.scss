@@ -833,3 +833,52 @@ body {
     margin-right: 50px;
     margin-bottom: -48px;
 }
+
+.footer__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1.5px solid rgba(105, 118, 135, 0.1);
+    margin-bottom: 30px;
+    padding-bottom: 50px;
+}
+
+.footer__wrap-list {
+    color: #002248;
+
+    & ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    & li {
+        margin-right: 40px;
+    }
+
+    & li:last-child {
+        margin-right: 0px;
+    }
+    
+}
+
+.footer__wrap-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &-icon {
+        margin-right: 12px;
+    }
+
+    &-icon:last-child {
+        margin-right: 0px;
+    }
+}
+
+.footer__author {
+    font-size: 14px;
+    color: #697687;
+    padding-bottom: 50px;
+    text-align: center;
+}
