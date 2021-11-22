@@ -1,7 +1,7 @@
 @import "null";
 @import "fonts";
 @import "libs";
-@import "mobile";
+
 
 body {
     font-family: 'Airbnb Cerea';
@@ -593,6 +593,10 @@ body {
     position: relative;
 }
 
+.perfect__travel-wrap-picter-mob {
+    display: none;
+}
+
 .perfect__travel-wrap-picter-images-img1 {
     border-radius: 45%;
     border: solid 10px #fff;
@@ -882,3 +886,5 @@ body {
     padding-bottom: 50px;
     text-align: center;
 }
+
+@import "mobile";
