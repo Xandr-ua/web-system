@@ -105,4 +105,43 @@ $(function () {
                 $('.header__menu-wrap').toggleClass('active');
              });
 
+             $(function(){
+               $(window).scroll(function(){
+                 if ($(this).scrollTop() > 200) 
+                    $('a#scrolling').fadeIn();
+                 else
+                    $('a#scrolling').fadeOut(400);
+               });
+               $('a#scrolling').click(function(){
+                 $('body, html').animate({
+                   scrollTop: 0
+                 },800);
+                 return false;
+               })
+             });
+
 });
+
+let btns = document.querySelectorAll("*[data-modal-btn]");
+
+
+    for(let i = 0; i<btns.length; i++) {
+        btns[i].addEventListener('click', function() {
+            let name = btns[i].getAttribute('data-modal-btn');
+            let smodal = document.querySelector("[data-modal-window='"+name+"']");
+            smodal.style.display = "block";
+            let close = smodal.querySelector(".modalClose");
+            close.addEventListener('click', function() {
+               smodal.style.display = "none";
+            })
+        })
+    };
+
+    window.onclick = function(closeAll) {
+       if(closeAll.target.hasAttribute('data-modal-window')) {
+          let modals = document.querySelectorAll("*[data-modal-window]");
+          for(let i = 0; i<modals.length; i++) {
+            modals[i].style.display = "none";
+          }
+       }
+    };    

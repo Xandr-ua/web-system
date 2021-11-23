@@ -266,8 +266,10 @@
     <div class="discover_content">
         <div class="conteiner">
             <div class="discover_content-wrap">
-                <div class="discover_content-wrap-batton">
-                    <img src="./images/play.svg" alt="#">
+                <div  class="discover_content-wrap-batton">
+                     <a data-modal-btn="my_modal1" href="#">
+                        <img src="./images/play.svg" alt="#">
+                     </a>
                 </div>
                 <div class="discover_content-wrap-title">
                     <h3>
@@ -436,9 +438,9 @@
                             Check Our Instagram Profile
                         </h2>
                     </div>
-                    <div class="check__our-wrap-title-btn">
+                    <a  class="check__our-wrap-title-btn">
                         <button>Follow Us</button>
-                    </div>
+                    </a>
                 </div>
                 <div class="check__our-wrap-slider">
                     <div class="check__our-wrap-slider-content-1"><img src="./images/sl1.jpg" alt=""></div>
@@ -499,6 +501,49 @@
             </div>
         </div>
     </footer>
+
+    <div data-modal-window="my_modal1" class="smodal">
+        <div class="modalWindow">
+
+            <div class="modalHeader">
+                <div class="modalHeaderImg">
+                    <span class="modalClose">&times</span>
+                </div>
+            </div>
+
+            <div class="modalBody">
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Ваше имя</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="Введите ваше имя">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Ваш Telegram</label>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="@nickname">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Ваша электронная почта</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            placeholder="you@domain.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">Ваш вопрос</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"
+                            placeholder="Сформулируйте ваш вопрос"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Отправить</button>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+
+    <a id="scrolling" href="#"></a>
+
+    
 
 
 <script src="js/main.min.js"></script>
