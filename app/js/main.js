@@ -6,11 +6,11 @@ $(function () {
         slidesToScroll: 3,
         responsive: [
           {
-            breakpoint: 768,
+            breakpoint: 769,
             settings: {
               arrows: false,
               centerMode: true,
-              centerPadding: '40px',
+              centerPadding: '0px',
               slidesToShow: 2
             }
           },
@@ -144,4 +144,4 @@ let btns = document.querySelectorAll("*[data-modal-btn]");
             modals[i].style.display = "none";
           }
        }
-    };    
+    };  

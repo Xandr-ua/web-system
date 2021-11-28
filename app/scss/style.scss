@@ -376,7 +376,7 @@ body {
         border: solid 6px #fff;
         border-radius: 10px;
         overflow: hidden;
-        margin-right: 20px;
+        margin-right: 40px;
     }
 
     &-item2 {
@@ -402,12 +402,20 @@ body {
     }
 }
 
+.slick-slide { 
+    margin: 0 6px;
+}
+
 .suggested__location-content-slider-item1,
 .suggested__location-content-slider-item2,
 .suggested__location-content-slider-item3 {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.suggested__location-content-slider-item1 {
+    margin-right: 20px;
 }
 
 .suggested__location-content-slider-item1-wrap,
@@ -430,6 +438,148 @@ body {
     align-items: center;
     padding-top: 23px;
     padding: 0px 20px;
+}
+
+.suggested__location-content-slider-item1-wrap-title-hotel {
+    font-family: 'Eksell Display';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 20px;
+    color: #fff;
+}
+
+.suggested__location-content-slider-item1-wrap-location,
+.suggested__location-content-slider-item2-wrap-location,
+.suggested__location-content-slider-item3-wrap-location {
+    font-family: 'Airbnb Cerea';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff;
+}
+
+// Rating
+
+.suggested__location-content-slider-item1-wrap-title-star {
+    position: relative;
+    font-size: 24px;
+}
+
+.suggested__location-content-slider-item1-wrap-title-star::before {
+    content: "★★★★★";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #fff;
+}
+
+.rating__item1 {
+    flex: 0 0 20%;
+    height: 100%;
+    opacity: 0;
+}
+
+.rating__active1 {
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.rating__active1::before {
+    content: "★★★★★";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #ffd300;
+}
+
+.suggested__location-content-slider-item2-wrap-title-star {
+    position: relative;
+    font-size: 24px;
+}
+
+.suggested__location-content-slider-item2-wrap-title-star::before {
+    content: "★★★★★";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #fff;
+}
+
+.rating__item2 {
+    flex: 0 0 20%;
+    height: 100%;
+    opacity: 0;
+}
+
+.rating__active2 {
+    position: absolute;
+    width: 82.5%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.rating__active2::before {
+    content: "★★★★★";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #ffd300;
+}
+
+.suggested__location-content-slider-item3-wrap-title-star {
+    position: relative;
+    font-size: 24px;
+}
+
+.suggested__location-content-slider-item3-wrap-title-star::before {
+    content: "★★★★★";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #fff;
+}
+
+.rating__item3 {
+    flex: 0 0 20%;
+    height: 100%;
+    opacity: 0;
+}
+
+.rating__active3 {
+    position: absolute;
+    width: 105%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+}
+
+.rating__active3::before {
+    content: "★★★★★";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    color: #ffd300;
 }
 
 .suggested__location-content-slider-item1-wrap-location,
